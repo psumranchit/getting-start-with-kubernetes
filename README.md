@@ -24,7 +24,6 @@
 │   └───k8s
 │           deployment.yaml
 │           service.yaml
-│           set-data.txt
 └───README.md
 ~~~
 
