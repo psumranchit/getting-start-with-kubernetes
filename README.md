@@ -20,7 +20,7 @@
 │           deployment.yaml
 │           service.yaml
 │
-├───database
+├───redis
 │   └───k8s
 │           deployment.yaml
 │           service.yaml
