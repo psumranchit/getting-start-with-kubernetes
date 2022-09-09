@@ -1,0 +1,31 @@
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+</head>
+<body>
+<script>
+    function getData(){ 
+
+        var url = "http://localhost:5000/query/" + document.getElementById("textinput1").value;
+        fetch(url, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json; charset=UTF-8',
+            }
+        })
+        .then(function getData(response){
+            text2=document.getElementById("text2").innerHTML = response.headers.get("Content-Type")
+        return response.text()
+        })
+        .then(function getData(data){
+            text3=document.getElementById("text3").innerHTML = data
+        })
+        document.getElementById("textinput1").value = ""
+    }
+</script>
+<input type="text" id="textinput1">
+<input type="submit" onclick="getData()">
+<p id="text1"></p>
+<p id="text2"></p>
+<h2><p id="text3"></p></h2>
+</body>
