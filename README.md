@@ -3,8 +3,6 @@
 
 ## Deployment
 ~~~
-│   README.md
-│
 ├───frontend
 │   │   index.html
 │   │   Dockerfile
@@ -22,9 +20,10 @@
 │           deployment.yaml
 │           service.yaml
 │
-└───database
-    └───k8s
-            deployment.yaml
-            service.yaml
-            set-data.txt
+├───database
+│   └───k8s
+│           deployment.yaml
+│           service.yaml
+│           set-data.txt
+└───README.md
 ~~~
