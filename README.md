@@ -24,6 +24,7 @@
 │   └───k8s
 │           deployment.yaml
 │           service.yaml
+|
 └───README.md
 ~~~
 
