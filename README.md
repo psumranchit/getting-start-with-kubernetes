@@ -29,6 +29,6 @@
 
 ## Deployment
 - Run `kubectl apple -f` in each `k8s` folder to deploy services.
-- Frontend and Backend service.yaml type is `type: LoadBalancer`. This is to automatically bind backend service port to host port.
+- Frontend and Backend service.yaml type is `type: LoadBalancer`. This is to automatically bind their services port to host port without the need for port-forward.
 - Insert some keys to redis with `kubectl.exe exec <pod-name> -- redis-cli set key value`
 - Browse to `http://localhost` and enter your key to display value.
